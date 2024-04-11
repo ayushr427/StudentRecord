@@ -71,18 +71,21 @@ public class MainPage extends JFrame {
 //		********************************************************************Product Panel******************************************************************************************
 		
 		AddStudent panel = new AddStudent();
-		tabbedPane.addTab("Product Panel", null, panel, null);
+		tabbedPane.addTab("ADD STUDENT", null, panel, null);
 	
       
        
         // Add the table to a scroll pane
      
 //		********************************************************************Bill History  Panel******************************************************************************************
-		JPanel panel_1 = new JPanel();
-		tabbedPane.addTab("Bill Panel", null, panel_1, null);
+		SearchByName panel_1 = new SearchByName();
+		tabbedPane.addTab("SEARCH", null, panel_1, null);
 		
-		JPanel panel_2 = new JPanel();
-		tabbedPane.addTab("Report", null, panel_2, null);
+		RegisteredStudent panel_2 = new RegisteredStudent();
+		tabbedPane.addTab("Count", null, panel_2, null);
+		
+		UpdateDelete panel_3 = new UpdateDelete();
+		tabbedPane.addTab("Update", null, panel_3, null);
 		
 		setVisible(true);
 	}
